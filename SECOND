@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+    int number, I;
+    srand(time(NULL));
+    printf("\t\t **** Welcome to the application for documentaries and biographies ****\n");
+    for(I =1 ; I <=3 ; I++){
+    printf("%3d",1 + (rand()%6));
+    }
+     printf("\n \nIf you get a duplicate number, it is considered your movie number for the day (✿◠‿◠) \n");
+    printf("\nChoose one of the above random numbers: \n");
+    scanf(" %d",&number);
+    switch( number){
+     case 1:
+        printf("Your film is movie the documentary :\n Seaspiracy 2021 \n ");
+        printf("\nEnjoy watching ♡");
+        break;
+     case 2:
+        printf("Your film is movie the autobiographical :\n Born a king 2019 \n");
+        printf("\nEnjoy watching ♡");
+        break;
+     case 3:
+        printf("Your film is movie the documentary :\n Secrets of the Saqqara Tomb (2020)\n");
+        printf("\nEnjoy watching ♡");
+        break;
+     case 4:
+        printf("Your film is movie the autobiographical :\n Lion of the desert 1981 \n");
+        printf("\nEnjoy watching ♡");
+        break;
+     case 5:
+        printf("Your film is movie the documentary :\n My Octopus Teacher 2020 \n");
+        printf("\nEnjoy watching ♡");
+        break;
+     case 6:
+        printf("Your film is movie the autobiographical :\n Zion 2018 \n");
+        printf("\nEnjoy watching ♡");
+        break;
+     default:
+     printf("You did not choose one of the numbers above (◕︿◕✿)\n");
+    
+    }
+
+    return 0;
+}
